@@ -13,10 +13,6 @@ export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
-export const ErrorBoundary = () => {
-  return <div>Something went wrong</div>;
-};
-
 export default function App() {
   return (
     <html lang="en">
