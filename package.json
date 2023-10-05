@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "remix build",
+    "build:local": "remix build --sourcemap && sentry-upload-sourcemaps --org sergtech --project remix-playground",
     "dev": "remix dev --manual",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
@@ -14,6 +15,7 @@
     "@remix-run/node": "^2.0.1",
     "@remix-run/react": "^2.0.1",
     "@remix-run/serve": "^2.0.1",
+    "@sentry/remix": "^7.73.0",
     "@vercel/remix": "^2.0.1",
     "isbot": "^3.6.8",
     "react": "^18.2.0",

@@ -36,6 +36,14 @@ export default function Index() {
           </a>
         </li>
       </ul>
+      <button
+        type="button"
+        onClick={() => {
+          throw new Error("Sentry Frontend Error");
+        }}
+      >
+        Throw error
+      </button>
     </div>
   );
 }
