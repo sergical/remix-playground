@@ -16,7 +16,7 @@ export const links: LinksFunction = () => [
 ];
 
 export const ErrorBoundary = () => {
-  return <div>Something went wrong</div>;
+  return <h1>Root error</h1>;
 };
 
 export default function App() {
