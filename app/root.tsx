@@ -1,4 +1,4 @@
-import { captureRemixErrorBoundaryError } from "@sentry/remix";
+// import { captureRemixErrorBoundaryError } from "@sentry/remix";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@vercel/remix";
 import {
@@ -8,7 +8,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useRouteError,
+  // useRouteError,
 } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
@@ -16,8 +16,6 @@ export const links: LinksFunction = () => [
 ];
 
 export const ErrorBoundary = () => {
-  const error = useRouteError();
-  captureRemixErrorBoundaryError(error);
   return <div>Something went wrong</div>;
 };
 
